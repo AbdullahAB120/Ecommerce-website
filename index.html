@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="This is an e-commerce website" />
+		
+		<title> AB Shop </title>
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Righteous&display=swap" rel="stylesheet">
+
+		<!-- Font-Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css" media="all" />
+		
+		<!-- Default CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
+		
+		<!-- Mobile CSS -->
+		<link rel="stylesheet" href="./assets/css/mobile.css" type="text/css" media="(max-width: 600px)" />
+		
+	</head>
+	<body>
+		
+		<!-- Navbar Starts Here -->
+		
+		<i id="menu-icon" class="fas fa-bars fa-3x"></i>
+		
+		<nav id="menu" class="hidden">
+			
+			<ul class="upper-nav flex-space-around">
+				<li> <a href="./index.html"> Home </a> </li>
+				<li> <a href="./pages/product.html"> Product </a> </li>
+				<li> <a href="./pages/signup.html"> Sign Up </a> </li>
+				<li> <a href="./pages/login.html"> Login </a> </li>
+				<li> <a href="./pages/contact.html"> Contact </a> </li>
+				<li> <a href="./pages/profile.html"> <img src="./assets/img/ab.jpg" alt="profile image" /> </a> </li>
+			</ul>
+			
+			<ul class="lower-nav flex-space-around">
+				<li> <a class="nav-brand" href="./index.html"> AB Shop </a> </li>
+				<li> <a href="./pages/cart.html"> <i class="fa-solid fa-shopping-cart"></i> Cart - 2 products ($246.78) </a> </li>
+			</ul>
+			
+		</nav>
+		<!-- Navbar Ends Here -->
+		
+		
+		
+		<!-- Header Section Ends Here -->
+		<header class="header">
+			
+			<div class="banner flex-space-around">
+				<marquee behaviour="" direction=""> 40% Sales going on </marquee>
+			</div>
+			
+			<div class="features flex-space-around">
+				
+				<article class="feature flex-center">
+					<i class="fas fa-truck"></i>
+					<h3> Shipping within 7 Days </h3>
+				</article>
+				
+				<article class="feature flex-center">
+					<i class="fa-brands fa-rocketchat"></i>
+					<h3> 24 Hours Support </h3>
+				</article>
+				
+				<article class="feature flex-center">
+					<i class="fa-regular fa-credit-card"></i>
+					<h3> Safe Payment Method </h3>
+				</article>
+				
+			</div>
+			
+		</header>
+		<!-- Header Section Ends Here -->
+		
+		
+		
+		<main class="flex-center">
+			
+			<!-- Sidebar Section Starts Here -->
+			<section class="sidebar">
+				
+				<div class="categories sidebar-option">
+					<h3> Categories </h3>
+					<ul>
+						<li> <label for="telephones"> <input type="checkbox" name="telephones" id="telephones" /> Telephones </label> </li>
+						<li> <label for="tablets"> <input type="checkbox" name="tablets" id="tablets" /> Tablets </label> </li>
+						<li> <label for="televisions"> <input type="checkbox" name="televisions" id="televisions" /> Televisions </label> </li>
+						<li> <label for="computers"> <input type="checkbox" name="computers" id="computers" /> Computers </label> </li>
+						<li> <label for="headphones"> <input type="checkbox" name="headphones" id="headphones" /> Headphones </label> </li>
+						<li> <label for="watches"> <input type="checkbox" name="watches" id="watches" /> Watches </label> </li>
+					</ul>
+				</div>
+				
+				<div class="price sidebar-option">
+					<h3> Price Range </h3>
+					<ul>
+						<li> <label for="price1"> <input type="radio" name="price" id="price1" /> $0 - $50 </label> </li>
+						<li> <label for="price2"> <input type="radio" name="price" id="price2" /> $50 - $100 </label> </li>
+						<li> <label for="price3"> <input type="radio" name="price" id="price3" /> $100 - $150 </label> </li>
+						<li> <label for="price4"> <input type="radio" name="price" id="price4" /> $150 - $200 </label> </li>
+						<li> <label for="price5"> <input type="radio" name="price" id="price5" /> $200 - $250 </label> </li>
+					</ul>
+				</div>
+				
+				<div class="shipping sidebar-option">
+					<h3> Shipping Option </h3>
+					<ul>
+						<li> <label for="free"> <input type="radio" name="shipping" id="free" /> Free Shipping </label> </li>
+						<li> <label for="paid"> <input type="radio" name="shipping" id="paid" /> Paid Shipping </label> </li>
+					</ul>
+				</div>
+				
+			</section>
+			<!-- Sidebar Section Ends Here -->
+			
+			
+			<!-- Main Content Starts Here -->
+			<section class="main-content">
+				
+				<div class="action flex-space-around">
+					
+					<div class="sort">
+						<label for="sort"> Sort By : </label>
+						<select name="sort" id="sort">
+							<option> Default </option>
+							<option> Price (Low to High) </option>
+							<option> Price (High to Low) </option>
+							<option> Newest Product First </option>
+							<option> Discount Product Firsr </option>
+						</select>
+					</div>
+					
+					<div class="search">
+						<input type="search" name="search" id="search" placeholder="Search" />
+						<button type="submit" class="btn-search"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+					</div>
+				</div>
+				
+				<div class="products">
+					
+					<div class="product">
+						<div class="badge">
+							<span> 5 in Stocks </span>
+							<hr class="hr"/>
+							<span> 3 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product1.jpg" alt="Product 1 image" />
+						
+						<div class="product-body">
+							<h3> Smart Watch </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $83.13 </h4>
+							<h5> Rating : 4.8/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+					<div class="product">
+						<div class="badge">
+							<span> 8 in Stocks </span>
+							<hr class="hr"/>
+							<span> 6 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product2.jpg" alt="Product 2 image" />
+						
+						<div class="product-body">
+							<h3> iPhone 13 pro </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $159.99 </h4>
+							<h5> Rating : 5/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+					<div class="product">
+						<div class="badge">
+							<span> 12 in Stocks </span>
+							<hr class="hr"/>
+							<span> 7 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product3.jpg" alt="Product 3 image" />
+						
+						<div class="product-body">
+							<h3> Headphone </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $53.13 </h4>
+							<h5> Rating : 4.6/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+					<div class="product">
+						<div class="badge">
+							<span> 6 in Stocks </span>
+							<hr class="hr"/>
+							<span> 4 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product4.jpg" alt="Product 4 image" />
+						
+						<div class="product-body">
+							<h3> Macbook </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $249.99 </h4>
+							<h5> Rating : 5/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+					<div class="product">
+						<div class="badge">
+							<span> 5 in Stocks </span>
+							<hr class="hr"/>
+							<span> 7 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product5.jpg" alt="Product 5 image" />
+						
+						<div class="product-body">
+							<h3> Smart Telivision </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $213.13 </h4>
+							<h5> Rating : 4.7/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+					<div class="product">
+						<div class="badge">
+							<span> 6 in Stocks </span>
+							<hr class="hr"/>
+							<span> 2 Sold </span>
+						</div>
+						
+						<img src="./assets/img/product6.jpg" alt="Product 6 image" />
+						
+						<div class="product-body">
+							<h3> Canon Camera </h3>
+							<p> aute aute aliqua qui Lorem ea commodo nisi do magna cillum minim
+							<a id="read-more" href="./pages/product.html"> Read more... </a></p>
+							<h4> Price: $123.13 </h4>
+							<h5> Rating : 4.5/5 </h5>
+							<button type="submit"> Add to Cart </button>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="pagination">
+					<button> <i class="fas fa-less-than"></i> </button>
+					<button> 2 </button>
+					<button> 3 </button>
+					<button> 4 </button>
+					<button> 5 </button>
+					<button> 6 </button>
+					<button> 7 </button>
+					<button> ... </button>
+					<button> 38 </button>
+					<button> <i class="fas fa-greater-than"></i> </button>
+				</div>
+			</section>
+			<!-- Main Content Ends Here -->
+			
+		</main>
+		
+		
+		<!-- Footer Starts Here -->
+		<footer class="footer flex-space-around">
+			
+			<div class="flex-space-around">
+				<label for="subscribe"> Subscribe our newsletter </label>
+				<input type="email" name="suscribe" class="subscribe" placeholder="Enter your email" />
+				<button type="submit" class="btn-subscribe"> Subscribe </button>
+			</div>
+			
+			<div>
+				<p> copyright &copy; 2024, Developed by Abdullah</p>
+			</div>
+			
+		</footer>
+		<!-- Footer Ends Here -->
+		
+		
+		
+		<!-- Javascript -->
+		<script src="./assets/js/main.js"></script>
+		
+	</body>
+</html>
